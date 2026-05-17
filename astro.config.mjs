@@ -3,10 +3,13 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
+import deno from '@deno/astro-adapter';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	site: 'https://astro-deno.tolu.deno.net',
+	output: 'server',
+  adapter: deno(),
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
