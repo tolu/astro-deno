@@ -1,5 +1,7 @@
 # Astro Starter Kit: Blog
 
+> Bug described here: https://github.com/denoland/deno-astro-adapter/pull/58#issuecomment-4470835596
+
 ```sh
 deno create astro@latest -- --template blog
 ```
